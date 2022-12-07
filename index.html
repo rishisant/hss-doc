@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Documentation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Documentation</h1>
+                Team RaMEN (13)
+            </div>
+            <div class="content">
+                <div class="textbox">
+                    <div class="centertext">General Functions</div>
+                    <i>raise_admin_bar(): </i> This function raises the admin bar if it is not raised. It takes in no parameters. <br><br>
+                    <i>translate(): </i> This function calls the Google Translate Cloud API in order to translate the page into
+                    the language specified by the user. It takes in two parameters, <b>text</b> and <b>targetLanguage</b>, which are used
+                    to specify the text to be translated and the language to translate the text into, respectively. <br><br>
+                </div>
+
+                <div class="textbox">
+                    <div class="centertext">Home Page Functions</div>
+                    <i>initVals(): </i> This function initializes the values of variables used to render all the objects.
+                    It takes no parameters and simply uses the values set in the localStorage of the website to set the
+                    values of the variables. <br><br>
+                    <i>initValsTiny(): </i> This function has the exact same functionality as initVals(), but it is used for
+                    objects that are too large when rendered with initVals(), so it makes objects smaller. <br><br>
+                    <i>print_All_Vals(): </i> This function was used in debugging, but simply prints all values fetched from the
+                    backend in order to check if the values are correct. <br><br>
+                    <i>getProduct(): </i> Uses a fetch call in order to get the product information from the backend. It takes
+                    in no parameters and is based off the back-end getProduct() function.
+                </div>
+
+                <div class="textbox">
+                    <div class="centertext">Accessibility Functions</div>
+                    <i>buttonClick(): </i> Takes in a param <b>param1</b> in order to determine which of the buttons was clicked on
+                    the screen, to determine what effect to apply to the screen. If param1 is 1, then the screen background is changed
+                    to a black and white background; if the parameter is 2, then the font size is increased. If the parameter is 3, then
+                    depending on which language is chosen, the screen is translated into that language after exiting the page. <br><br>
+                </div> 
+
+                <div class="textbox">
+                    <div class="centertext">Google Maps Functions</div>
+                    <i>render(): </i> This function renders all the elements on the page. It takes in no parameters.
+                    <i>initVals(): </i> This function initializes the values of variables used to render all the objects.
+                    It takes no parameters and simply uses the values set in the localStorage of the website to set the
+                    values of the variables. <br><br>
+                </div>
+
+                <div class="textbox">
+                    <div class="centertext">Customer Order Functions</div>
+                    <i>getProduct(): </i> Uses a fetch call in order to get the product information from the backend. It takes
+                    in no parameters and is based off the back-end getProduct() function.<br><br>
+                    <i>add_to_order(): </i> This function adds the product to the order. It takes in no parameters.<br><br>
+                    <i>queryOrder(): </i> Grabs orders from the backend in order to display them on the page. It takes in no parameters.<br><br>
+                    <i>onClickAddItem(): </i> Allows for items to be selected after being clicked on. It takes in no parameters.<br><br>
+                    <i>renderOrders(): </i> Maps the orders onto the table in order to render them. It takes in no parameters.<br><br>
+                    <i>renderProducts(): </i> Maps the products onto the table in order to render them. It takes in no parameters.<br><br>
+                    <i>initVals(): </i> This function initializes the values of variables used to render all the objects.
+                    It takes no parameters and simply uses the values set in the localStorage of the website to set the
+                    values of the variables. <br><br>
+                </div> 
+
+                <div class="textbox">
+                    <div class="centertext">Authentication Functions</div>
+                    <i>isValidManager(): </i> Checks if the user is a manager. It takes in no parameters.<br><br>
+                    <i>isValidServer(): </i> Checks if the user is a server. It takes in no parameters.<br><br>
+                    <i>initVals(): </i> This function initializes the values of variables used to render all the objects.
+                    It takes no parameters and simply uses the values set in the localStorage of the website to set the
+                    values of the variables. <br><br>
+                </div> 
+
+                <div class="textbox">
+                    <div class="centertext">Server Functions</div>
+                    <i>getProduct(): </i> Uses a fetch call in order to get the product information from the backend. It takes
+                    in no parameters and is based off the back-end getProduct() function.<br><br>
+                    <i>getIngredient(): </i> Uses a fetch call in order to get the ingredient information from the backend. It takes
+                    in no parameters and is based off the back-end getIngredient() function.<br><br>
+                    <i>print_All_Vals(): </i> This function was used in debugging, but simply prints all values fetched from the
+                    backend in order to check if the values are correct. <br><br>
+                    <i>initVals(): </i> This function initializes the values of variables used to render all the objects.
+                    It takes no parameters and simply uses the values set in the localStorage of the website to set the
+                    values of the variables. <br><br>
+                    <i>getOrders(): </i> This function gets the orders from the backend. It takes in no parameters.<br><br>
+                    <i>renderOrders(): </i> This function renders the orders onto the page. It takes in no parameters.<br><br>
+                    <i>renderProducts(): </i> This function renders the products onto the page. It takes in no parameters.<br><br>
+                    <i>queryOrder(): </i> Grabs orders from the backend in order to display them on the page. It takes in no parameters.<br><br>
+                    <i>onClickAddItem(): </i> Allows for items to be selected after being clicked on. It takes in no parameters.<br><br>
+                    <i>add_to_order(): </i> This function adds the product to the order. It takes in no parameters.<br><br>
+                    <i>send_To_Manager(): </i> This function allows for servers to contact managers. It takes in no parameters,
+                    but it scrapes the text from the textareafield <b>contmanager</b> and sends it to the backend.<br><br>
+                    <i>initVals(): </i> This function initializes the values of variables used to render all the objects.
+                    It takes no parameters and simply uses the values set in the localStorage of the website to set the
+                    values of the variables. <br><br>
+                </div> 
+
+                <div class="textbox">
+                    <div class="centertext">Manager Functions</div>
+                    <i>getProduct(): </i> Uses a fetch call in order to get the product information from the backend. It takes
+                    in no parameters and is based off the back-end getProduct() function.<br><br>
+                    <i>getIngredient(): </i> Uses a fetch call in order to get the ingredient information from the backend. It takes
+                    in no parameters and is based off the back-end getIngredient() function.<br><br>
+                    <i>print_All_Vals(): </i> This function was used in debugging, but simply prints all values fetched from the
+                    backend in order to check if the values are correct. <br><br>
+                    <i>initVals(): </i> This function initializes the values of variables used to render all the objects.
+                    It takes no parameters and simply uses the values set in the localStorage of the website to set the
+                    values of the variables. <br><br>
+                    <i>getInv(): </i> Based on the back-end function, this function gets the inventory from the backend. It takes
+                    in no parameters.<br><br>
+                    <i>getMenu(): </i> Based on the back-end function, this function gets the menu from the backend. It takes
+                    in no parameters.<br><br>
+                    <i>renderInventory(): </i> This function renders the inventory onto the page. It takes in no parameters.<br><br>
+                    <i>onClickEditMenu(): </i> This function takes in the parameters <b>product_id</b>, <b>name</b>, <b>price</b>, <b>category</b>,
+                    and <b>ing</b> in order to populate the menu with the edits made by the manager.<br><br>
+                    <i>onClickEditInv(): </i> This function takes in the parameters <b>inv_id</b>, <b>name</b>, and <b>stock</b> and populates
+                    the inventory with the edits made by the manager.<br><br>
+                    <i>putProduct(): </i> This function makes an edit to the menu. It waits for the back-end fetch to occur as it 
+                    is an async function and grabs the values from the rendered elements.<br><br>
+                    <i>postProduct(): </i> This function gets the value from the edit menu form, and sends them to the back-end in order
+                    to add a new product to the menu.<br><br>
+                    <i>addInv(): </i> This function fetches values from the back-end in order to update the menu table. It takes no parameters.<br><br>
+                    <i>putInv(): </i> This function fetches values from the back-end in order to update the inventory table. It takes no parameters.<br><br>
+                    <i>deleteInv(): </i> This function fetches values from the back-end in order to delete an item from the inventory table. It takes no parameters.<br><br>
+                    <i>renderMenu(): </i> This function maps the menu onto the page table. It takes in no parameters.<br><br>
+                    <i>loadTables(): </i> This function loads the tables onto the page. It takes in no parameters, but uses the
+                    value given by the element <b>menuorinventory</b> to determine which of the tables to load.<br><br>
+                    <i>getOrders(): </i> This function gets the orders from the backend. It takes in no parameters.<br><br>
+                    <i>renderOrders(): </i> This function renders the orders onto the page. It takes in no parameters.<br><br>
+                    <i>renderProducts(): </i> This function renders the products onto the page. It takes in no parameters.<br><br>
+                    <i>queryOrder(): </i> Grabs orders from the backend in order to display them on the page. It takes in no parameters.<br><br>
+                    <i>onClickAddItem(): </i> Allows for items to be selected after being clicked on. It takes in no parameters.<br><br>
+                    <i>add_to_order(): </i> This function adds the product to the order. It takes in no parameters.<br><br>
+                    <i>getEmployees(): </i> This function gets the employees from the backend. It takes in no parameters.<br><br>
+                    <i>renderEmployees(): </i> This function renders the employees onto the page. It takes in no parameters.<br><br>
+                    <i>initVals(): </i> This function initializes the values of variables used to render all the objects.
+                    It takes no parameters and simply uses the values set in the localStorage of the website to set the
+                    values of the variables. <br><br>
+                </div> 
+
+
+            </div>
+        </div>
+    </body>
+</html>

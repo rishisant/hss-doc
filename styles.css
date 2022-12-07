@@ -1,0 +1,31 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url("./img/background.png")
+}
+
+.header {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 2px white;
+    margin-bottom: 20px;
+}
+
+.textbox {
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.centertext {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
